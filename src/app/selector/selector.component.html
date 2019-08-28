@@ -1,0 +1,9 @@
+<div>
+  <i class="fas fa-chevron-left" (click)="onMonthChange(-1)"></i>
+  
+  <span>
+    {{ dateService.date | async | moment }}
+  </span>
+  
+  <i class="fas fa-chevron-right" (click)="onMonthChange(1)"></i>
+</div>
